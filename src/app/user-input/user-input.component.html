@@ -1,0 +1,10 @@
+<label for="">User name</label>
+<input type="text" [(ngModel)]="userName" class="form-control" />
+<button
+  [disabled]="!isUserNameValid()"
+  class="btn btn-primary"
+  (click)="onNameSubmit()"
+>
+  Submit
+</button>
+<p>Username is : {{ submittedName }}</p>
